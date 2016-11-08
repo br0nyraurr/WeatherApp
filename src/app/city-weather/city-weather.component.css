@@ -1,0 +1,24 @@
+.city {
+  display: inline-block;
+}
+
+.temperature {
+  display: inline-block;
+  float: right;
+  width: 80px;
+  text-align: right;
+}
+
+.wind {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+
+.row {
+  margin: auto;
+}
+
+.wind-text {
+  color: gray;
+}

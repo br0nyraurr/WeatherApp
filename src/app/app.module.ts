@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CityWeatherComponent } from './city-weather/city-weather.component';
+import { CityForecastComponent } from './city-weather/city-forecast/city-forecast.component';
+import { KToFTempPipe } from './shared/k-to-f-temp.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityWeatherComponent,
+    CityForecastComponent,
+    KToFTempPipe
   ],
   imports: [
     BrowserModule,

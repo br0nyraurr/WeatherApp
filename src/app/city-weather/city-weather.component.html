@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingOne">
+    <h4 class="panel-title collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+        [attr.href]="'#' + city"  aria-expanded="false" aria-controls="city">
+      <div class="city">{{city}}</div>
+      <div class="temperature">{{ temperature | kToFTemp }}°F</div>
+      <div class="wind"><span class="wind-text">wind:</span> {{ wind }} km/h</div>
+    </h4>
+  </div>
+  <div [id]="city" class="panel-collapse collapse row" role="tabpanel">
+    <app-city-forecast [city]="city"></app-city-forecast>
+  </div>
+</div>
+
